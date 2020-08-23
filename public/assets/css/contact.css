@@ -1,0 +1,196 @@
+* {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif, Arial;
+  }
+  .contentTyped {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .typedtext {
+    margin-top: 10%;
+    border-right: 2px solid black;
+    animation: blinkTextCursor 800ms steps(44) infinite normal;
+    height: 40px;
+    margin-bottom: 55px;
+    color: #000;
+    display: inline-block;
+  }
+  
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  
+
+  * {
+    transition: .25s ease;
+  }
+  .contact-wrap {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .form-wrapper {
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-div {
+    box-sizing: border-box;
+    background-color: transparent;
+    width: 100%;
+    padding: 2em;
+    max-width: 50em;
+    min-height: 25em;
+  }
+  .input-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .feedback-input {
+    box-shadow: none;
+    border-radius: 0;
+    background-clip: padding-box;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-bottom: 2px solid #333;
+    color: #333;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    padding: 1em;
+    margin: 0 0 2em 0;
+    width: 100%;
+  }
+  .input-wrap .feedback-input:last-child {
+    margin-left: 2em;
+  }
+  .feedback-input:focus {
+    border: 2px solid #333;
+    background-color: transparent;
+    outline: none;
+  }
+  textarea {
+    font-size: 1rem;
+    height: 10em;
+    overflow: hidden;
+    resize: none;
+  }
+  .message {
+    text-align: left;
+    margin: 0;
+  }
+  .checkbox-wrap {
+    padding: 0;
+    margin: 1em 0;
+    text-align: center;
+    position: relative;
+  }
+  .checkbox {
+    visibility: hidden;
+  }
+  .captcha {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: 0;
+    color: #333;
+    position: relative;
+  }
+  .captcha:before {
+    background-color: transparent;
+    border: 2px solid rgba(0,0,0, 1);
+    border-radius: 100%;
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -25px;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+  }
+  .checkbox:checked ~ .captcha:before {
+    background-color: #333;
+  }
+  .send-button {
+    font-size: 1rem !important;
+    border: 1px solid #333 !important;
+    cursor: pointer !important;
+    min-width: 11.5em !important;
+    letter-spacing: 1px !important;
+    background-color: transparent !important;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 0.75em 0.3em !important;
+    margin: 0 auto !important;
+    color: #333 !important;
+    font-weight: 600 !important;
+    outline: none !important;
+    padding: 0 !important;
+    display: flex !important;
+    border-radius: 0 !important;
+    justify-content: center !important;
+  }
+  .send-button:hover {
+    background-color: #ce1b28 !important;
+    color: #fff !important;
+    border: 1px solid #ce1b28 !important;
+    box-shadow: none !important;
+  }
+  ::-webkit-input-placeholder {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+  }  
+  ::input-placeholder {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+  }
+  ::-webkit-input-placeholder {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+  }
+  :-ms-input-placeholder {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+  }
+  ::placeholder {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+  }
+  
+  @media only screen and (max-width: 426px) {
+    .input-wrap {
+      flex-direction: column;
+    }
+    .input-wrap .feedback-input:last-child {
+      margin-left: 0;
+    }
+  }
+
+  
